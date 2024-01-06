@@ -13,11 +13,18 @@ public class Diagonal2D {
                 a[i][j] = sc.nextInt();
             }
         }
-        System.out.println("Diagonal elements are");
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                if (i == j)
-                    System.out.println(a[i][j]);
+       /*  System.out.println("Diagonal elements are");
+       * for (int i = 0; i < a.length; i++) {
+        *    for (int j = 0; j < a[i].length; j++) {
+         *       if (i == j)
+          *          System.out.println(a[i][j]);
+            }
+        }*/
+        System.out.println("Diagonal elements in reverse are");
+        for(int x=a.length-1;x>=0;x--){
+            for (int y=a[x].length;y>=0;y--){
+                if(x==y)
+                    System.out.println(a[x][y]);
             }
         }
     }
